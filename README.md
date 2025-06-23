@@ -19,7 +19,7 @@ Training various classification models and evaluating their performance using me
 
 ## Modeling
 
-## Support Vector Classifier for Churn Prediction
+### Support Vector Classifier for Churn Prediction
 The Support Vector Classifier (SVC) is an implementation of Support Vector Machines (SVM) designed specifically for classification tasks, and is available in the scikit-learn library. It is a supervised learning algorithm that aims to find the optimal hyperplane that separates classes while maximizing the margin between them.
 In the context of churn prediction, the goal is to identify customers who are likely to cancel a service. SVC is particularly well-suited for this type of problem, as customer data is often multi-dimensional (usage behavior, billing, customer support interactions, etc.) and may involve complex decision boundaries between loyal and at-risk customers.
 Thanks to its robustness to noise and flexibility through the use of various kernels, SVC provides an effective approach for modeling churn probability.
