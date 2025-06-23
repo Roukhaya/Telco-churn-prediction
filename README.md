@@ -32,22 +32,22 @@ Gaussian Naive Bayes is a supervised classification algorithm based on Bayes' th
 In the context of churn prediction, GaussianNB can be used to identify customers at risk of leaving based on their past behavior.
 
 ## Result
-. SVC model
+* SVC model
 The evaluation of the SVC model on the test set resulted in an accuracy of 79%, indicating an overall satisfactory performance. The model performs well on the non-churn class, with a precision of 0.83 and a recall of 0.91.
 However, the performance on the churn class is weaker, with a recall of 0.47 and an F1-score of 0.55, suggesting that the model struggles to accurately identify customers who are likely to churn. This may be due to class imbalance or the model’s limited capacity to capture the complex patterns associated with churn behavior.
-. Random Forest 
+* Random Forest 
 The evaluation of the Random Forest model yielded an accuracy of 78%, indicating an overall good performance on the test set. The model is effective at classifying non-churners, with a precision of 82% and a recall of 90%, meaning it accurately identifies most loyal customers.
 However, performance on the churn class (customers at risk of leaving) is weaker:
 Precision: 62%
 Recall: 45%
 F1-score: 52%
 These results suggest that the model has more difficulty identifying customers likely to churn, which may be due to a class imbalance (fewer churners in the data). To improve detection of this class, data balancing techniques or hyperparameter optimization could be considered.
-. GuassianNB 
+* GuassianNB 
 The Gaussian Naive Bayes model achieved an overall accuracy of 74%, reflecting a moderate performance on the test set. Despite its simplicity, it stands out for maintaining a good balance in detecting both classes.
 For the non-churn class (loyal customers), the model achieved a precision of 88% and a recall of 74%, indicating that it correctly identifies most of the customers who stay.
 For the churn class (at-risk customers), it shows a precision of 51% but a high recall of 73%, meaning it successfully detects a large portion of customers likely to churn, though at the cost of some false positives.
 This behavior — high recall on churners — is often desirable in churn prediction scenarios, as it is generally preferable to identify as many at-risk customers as possible, even if it includes some false positives.
-.  Comparative Table
+* Comparative Table
 
 | Model             | Class         | Precision | Recall | F1-score | Accuracy |
 | ----------------- | ------------- | --------- | ------ | -------- | -------- |
@@ -58,7 +58,7 @@ This behavior — high recall on churners — is often desirable in churn predic
 | **GaussianNB**    | 0 (non-churn) | 0.88      | 0.74   | 0.81     | **0.74** |
 |                   | 1 (churn)     | 0.51      | 0.73   | 0.60     |          |
 
- Comparative Analysis
+ * Comparative Analysis
  ✅ SVC (Support Vector Classifier)
 Best overall accuracy (79%)
 Excellent performance on non-churners
