@@ -23,14 +23,23 @@ Training various classification models and evaluating their performance using me
 The Support Vector Classifier (SVC) is an implementation of Support Vector Machines (SVM) designed specifically for classification tasks, and is available in the scikit-learn library. It is a supervised learning algorithm that aims to find the optimal hyperplane that separates classes while maximizing the margin between them.
 In the context of churn prediction, the goal is to identify customers who are likely to cancel a service. SVC is particularly well-suited for this type of problem, as customer data is often multi-dimensional (usage behavior, billing, customer support interactions, etc.) and may involve complex decision boundaries between loyal and at-risk customers.
 Thanks to its robustness to noise and flexibility through the use of various kernels, SVC provides an effective approach for modeling churn probability.
+
 ![SVC.png](https://github.com/Roukhaya/Telco-churn-prediction/blob/main/SVC.png)
+
+
 ### Random Forest for churn prediction 
 Random Forest is a supervised learning algorithm based on an ensemble of decision trees. It combines the predictions of multiple trees built on random subsets of the data in order to improve accuracy and reduce the risk of overfitting.
 In the context of churn prediction, Random Forest is particularly effective at handling complex and heterogeneous data (such as demographic information, usage history, customer support interactions, etc.). It can capture non-linear relationships between variables and helps rank the most important features for identifying customers at risk of leaving.
 Thanks to its robustness and strong generalization ability, Random Forest is a powerful solution for detecting at-risk behavior within customer databases.
+
+![RF.png](https://github.com/Roukhaya/Telco-churn-prediction/blob/main/RF.png)
+
+
 ### GaussianNB for churn prediction 
 Gaussian Naive Bayes is a supervised classification algorithm based on Bayes' theorem, assuming that the features are independent of each other and follow a Gaussian (normal) distribution. It is particularly valued for its simplicity, fast training time, and ability to perform well even with small datasets.
 In the context of churn prediction, GaussianNB can be used to identify customers at risk of leaving based on their past behavior.
+
+![NB.png](https://github.com/Roukhaya/Telco-churn-prediction/blob/main/NB.png)
 
 ## Result
 * SVC model
