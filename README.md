@@ -59,15 +59,18 @@ This behavior — high recall on churners — is often desirable in churn predic
 |                   | 1 (churn)     | 0.51      | 0.73   | 0.60     |          |
 
  * Comparative Analysis
+
  ✅ SVC (Support Vector Classifier)
 Best overall accuracy (79%)
 Excellent performance on non-churners
 Low recall on churners (47%), meaning many at-risk customers are missed
 Less effective for critical churn detection tasks
+
 ✅ Random Forest
 Performance very close to SVC
 Good balance of precision and recall for the non-churn class
 Recall still low for churners (45%), showing the same limitation as SVC
+
 ✅ Gaussian Naive Bayes
 Lower overall accuracy (74%), but:
 Highest recall on churners (73%), which is valuable in a business context
