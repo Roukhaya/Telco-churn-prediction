@@ -47,7 +47,7 @@ The Gaussian Naive Bayes model achieved an overall accuracy of 74%, reflecting a
 For the non-churn class (loyal customers), the model achieved a precision of 88% and a recall of 74%, indicating that it correctly identifies most of the customers who stay.
 For the churn class (at-risk customers), it shows a precision of 51% but a high recall of 73%, meaning it successfully detects a large portion of customers likely to churn, though at the cost of some false positives.
 This behavior — high recall on churners — is often desirable in churn prediction scenarios, as it is generally preferable to identify as many at-risk customers as possible, even if it includes some false positives.
-* Comparative Table
+### Comparative Table
 
 | Model             | Class         | Precision | Recall | F1-score | Accuracy |
 | ----------------- | ------------- | --------- | ------ | -------- | -------- |
@@ -58,7 +58,7 @@ This behavior — high recall on churners — is often desirable in churn predic
 | **GaussianNB**    | 0 (non-churn) | 0.88      | 0.74   | 0.81     | **0.74** |
 |                   | 1 (churn)     | 0.51      | 0.73   | 0.60     |          |
 
- * Comparative Analysis
+ ### Comparative Analysis
 
  ✅ SVC (Support Vector Classifier)
 Best overall accuracy (79%)
